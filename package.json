@@ -1,0 +1,12 @@
+{
+  "name": "xss_server",
+  "version": "1.0.0",
+  "description": "WebFuzzer XSS 테스트용 웹서버",
+  "main": "app.js",
+  "author": "nnnlog",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0"
+  }
+}
