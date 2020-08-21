@@ -19,11 +19,12 @@ app.use((req, res, next) => {
 });
 
 app.get("/xss_get", (req, res) => {
-	console.log(req.query)
+	console.log("GET Request", req.query);
 	res.end(html(req.query.xss));
 });
 
 app.post("/xss_post", (req, res) => {
+	console.log("POST Request", req.body);
 	res.end(html(req.body.xss));
 });
 
